@@ -18,7 +18,7 @@
 			<div class="row">
 
 				<form name="joinForm" class="col-lg-12 row login_form"
-					action="registerSuccess.do" method="POST" id="register_form">
+					action="/registerSuccess" method="POST" id="register_form">
 					<!-- 약관동의 -->
 					<div class="col-lg-6">
 						<div class="login_form_inner register_form_inner">
@@ -99,7 +99,7 @@
 							</textarea>
 							<div class="col-md-12 form-group">
 								<div class="creat_account" style="text-align: center;">
-									<input type="checkbox" id="f-option3" name="marketing">
+									<input type="checkbox" id="f-option3" name="memberMarketing">
 									<label for="f-option3">[선택] 이메일 수신 동의</label>
 								</div>
 							</div>
@@ -114,7 +114,7 @@
 							<div class="col-md-12 form-group">
 								<div class="col-md-4 label-text">이름</div>
 								<input type="text" class="form-control col-md-8" id="registName"
-									name="name" placeholder="이름 입력" onfocus="this.placeholder = ''"
+									name="memberName" placeholder="이름 입력" onfocus="this.placeholder = ''"
 									onblur="this.placeholder = '이름 입력'"
 									style="display: inline-block;">
 							</div>
@@ -122,7 +122,7 @@
 							<div class="col-md-12 form-group" style="margin: 0;">
 								<div class="col-md-4 label-text">아이디</div>
 								<input type="text" class="form-control col-md-8" id="registMid"
-									name="mid" placeholder="아이디 입력" onfocus="this.placeholder = ''"
+									name="memberID" placeholder="아이디 입력" onfocus="this.placeholder = ''"
 									onblur="this.placeholder = '아이디 입력'"
 									style="display: inline-block;">
 							</div>
@@ -136,7 +136,7 @@
 							<div class="col-md-12 form-group" style="margin: 0;">
 								<div class="col-md-4 label-text">비밀번호</div>
 								<input type="password" class="form-control col-md-8"
-									id="registMpw" name="mpw" placeholder="비밀번호 입력"
+									id="registMpw" name="memberPassword" placeholder="비밀번호 입력"
 									onfocus="this.placeholder = ''"
 									onblur="this.placeholder = '비밀번호 입력'"
 									style="display: inline-block;">
@@ -166,7 +166,7 @@
 							<div class="col-md-12 form-group" style="margin: 0;">
 								<div class="col-md-4 label-text">닉네임</div>
 								<input type="text" class="form-control col-md-8"
-									id="registNickname" name="nickname" placeholder="닉네임 입력"
+									id="registNickname" name="memberNickname" placeholder="닉네임 입력"
 									onfocus="this.placeholder = ''"
 									onblur="this.placeholder = '닉네임 입력'"
 									style="display: inline-block;">
@@ -182,7 +182,7 @@
 							<div class="col-md-12 form-group">
 								<div class="col-md-4 label-text">주소</div>
 								<input type="text" class="form-control col-md-7"
-									id="sample4_postcode" name="zonecode" placeholder="우편번호"
+									id="sample4_postcode" name="addressZonecode" placeholder="우편번호"
 									onfocus="this.placeholder = ''"
 									onblur="this.placeholder = '우편번호'"
 									style="display: inline-block; background-color: #fff" readonly>
@@ -194,7 +194,7 @@
 							<div class="col-md-12 form-group">
 								<div class="col-md-4 label-text"></div>
 								<input type="text" class="form-control col-md-8"
-									id="sample4_roadAddress" name="roadAddress" placeholder="도로명주소"
+									id="sample4_roadAddress" name="addressRoad" placeholder="도로명주소"
 									onfocus="this.placeholder = ''"
 									onblur="this.placeholder = '도로명주소'"
 									style="display: inline-block; background-color: #fff" readonly>
@@ -202,7 +202,7 @@
 							<div class="col-md-12 form-group">
 								<div class="col-md-4 label-text"></div>
 								<input type="text" class="form-control col-md-8"
-									id="sample4_jibunAddress" name="jibunAddress"
+									id="sample4_jibunAddress" name="addressJibun"
 									placeholder="지번주소" onfocus="this.placeholder = ''"
 									onblur="this.placeholder = '지번주소'"
 									style="display: inline-block; background-color: #fff" readonly>
@@ -210,7 +210,7 @@
 							<div class="col-md-12 form-group">
 								<div class="col-md-4 label-text"></div>
 								<input type="text" class="form-control col-md-8"
-									id="sample4_detailAddress" name="detailAddress"
+									id="sample4_detailAddress" name="addressDetail"
 									placeholder="상세주소" onfocus="this.placeholder = ''"
 									onblur="this.placeholder = '상세주소'"
 									style="display: inline-block;">
@@ -220,7 +220,7 @@
 							<div class="col-md-12 form-group" style="margin: 0;">
 								<div class="col-md-4 label-text">전화번호</div>
 								<input type="text" class="form-control col-md-8"
-									id="registPhone" name="phone" placeholder="전화번호 입력"
+									id="registPhone" name="memberPhone" placeholder="전화번호 입력"
 									onfocus="this.placeholder = ''"
 									onblur="this.placeholder = '전화번호 입력'"
 									style="display: inline-block;">
@@ -235,7 +235,7 @@
 							<div class="col-md-12 form-group">
 								<div class="col-md-4 label-text">생년월일</div>
 								<input type="date" class="form-control col-md-8"
-									id="registBirth" name="birth" placeholder="생년월일"
+									id="registBirth" name="memberBirth" placeholder="생년월일"
 									onfocus="this.placeholder = ''"
 									onblur="this.placeholder = '생년월일'"
 									style="display: inline-block;">
@@ -244,7 +244,7 @@
 							<div class="col-md-12 form-group" style="margin: 0;">
 								<div class="col-md-4 label-text">이메일</div>
 								<input type="text" class="form-control col-md-8"
-									id="registEmail" name="email" placeholder="e-mail"
+									id="registEmail" name="memberEmail" placeholder="e-mail"
 									onfocus="this.placeholder = ''"
 									onblur="this.placeholder = 'e-mail'"
 									style="display: inline-block;">

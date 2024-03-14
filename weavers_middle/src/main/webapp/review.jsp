@@ -27,21 +27,21 @@
 		<!-- 리뷰를 작성하지 않은 상품일 경우 작성하기 버튼 -->
 			<c:if test="${data.rpk == 0}"> 
 				<form id="reviewForm" onsubmit="submitForm(event)"
-					action="reviewInsert.do" method="POST" enctype="multipart/form-data"> 								
+					action="/reviewInsert" method="POST" enctype="multipart/form-data"> 								
 					
 			</c:if>
 		<!-- 리뷰를 작성한 상품일 경우 작성하기 버튼 -->
 			<c:if test="${data.rpk != 0}">
 				<form id="reviewForm" onsubmit="submitForm(event)"
-					action="reviewUpdate.do" method="POST" enctype="multipart/form-data">								
+					action="/reviewUpdate" method="POST" enctype="multipart/form-data">								
 			</c:if>
 				<a href="productDetail.do?ppk=${data.ppk}"> <img
 					class="card-img" src="${data.pimg}" alt="구매한 상품 이미지"></a><br> 
 				<br>
 				<h3>${data.pname}</h3> <!-- 리뷰 작성할 구매한 상품 이름 -->
 				<br><br>				
-				<input type="hidden" name="rpk" value="${data.rpk}">
-				<input type="hidden" name="bpk" value="${data.bpk}">
+				<input type="hidden" name="reviewPK" value="${data.rpk}">
+				<input type="hidden" name="buyProductPK" value="${data.bpk}">
 				<div class="form-group">
 					<div class="form-group form-inline">
 					
@@ -58,7 +58,7 @@
 							id="uploadimg" name="file" onchange="readURL(this);" value="${data.img}" accept=".png, .jpeg, .jpg"> 
 						<input type="hidden" id="prevImg" name="prevImg" value="${data.img}"> <!-- 이미지 미리보기 -->
 						
-						<input type="hidden" name="scope" id="scope" value="">
+						<input type="hidden" name="reviewScope" id="scope" value="">
 						<c:if test="${data.scope == 0}">
 						<star:star id="myStarRating" defaultRating="5" />	<!-- 별점이 등록되지 않았으면 기본값은 별5개 -->
 						</c:if>
@@ -66,7 +66,7 @@
 						<star:star id="myStarRating" defaultRating="${data.scope}" /> <!-- 등록된 별점을 받아와서 출력 -->
 						</c:if>
 						<!-- 리뷰 작성내용 출력 -->
-						<textarea class="form-control mb-10" rows="5" name="content"
+						<textarea class="form-control mb-10" rows="5" name="reviewContent"
 							id="reviewMessage" placeholder="리뷰 내용"
 							onfocus="this.placeholder =''"
 							

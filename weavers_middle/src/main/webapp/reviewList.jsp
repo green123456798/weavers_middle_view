@@ -38,7 +38,7 @@
 							</div>
 						</c:if>
 						</div>
-						<input type="hidden" name="scope" id="scope" value="${data.scope}"> 
+						<input type="hidden" name="reviewScope" id="scope" value="${data.scope}"> 
 						<star:star id="${data.bpk}" defaultRating="${data.scope}" />		<!-- 기존에 별점이 입력 되있었으면 그 별점값을 불러옴 -->
 						<div class="form-group">
 							<textarea class="form-control mb-10" rows="5" name="message"
