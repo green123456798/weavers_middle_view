@@ -12,7 +12,7 @@
 </head>
 <body>
 	<common:header />
-	<common:banner bannerText='구매내역' />
+	<common:banner bannerText='구매내역 주석' />
 
 	<!-- ================ 내용 ================= -->
 	<div class="comments-area" style="margin-bottom: 50px;">
