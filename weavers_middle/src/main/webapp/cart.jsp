@@ -43,10 +43,10 @@
 										<td style="text-align: left;">
 											<div class="media">
 												<div class="d-flex">
-													<a href="productDetail.do?ppk=${data.ppk}"><img src="${data.img}" alt="${data.ppk}번 상품사진" style="width: 150px;"></a>
+													<a href="/productDetail?ppk=${data.ppk}"><img src="${data.img}" alt="${data.ppk}번 상품사진" style="width: 150px;"></a>
 												</div>
 												<div class="media-body">
-													<a href="productDetail.do?ppk=${data.ppk}" id="cartProduct"><p>${data.pname}</p></a>
+													<a href="/productDetail?ppk=${data.ppk}" id="cartProduct"><p>${data.pname}</p></a>
 												</div>
 											</div>
 										</td>
@@ -56,7 +56,7 @@
 										<!-- 장바구니 수량 변경 -->
 										<td style="padding-left: 3rem; padding-right: 0;">
 											<div class="product_count">
-												<input type="text" name="qty" id="qty_${data.ppk}" maxlength="12" value="${data.cnt}" title="Quantity:" class="input-text qty"
+												<input type="text" name="cartCnt" id="qty_${data.ppk}" maxlength="12" value="${data.cnt}" title="Quantity:" class="input-text qty"
 													onchange="updateQuantity('${data.ppk}', ${data.price});" readonly>
 												<button onclick="updateQuantity('${data.ppk}', '1', ${data.price})" class="increase items-count" type="button">
 													<i class="lnr lnr-chevron-up"></i>
@@ -75,7 +75,7 @@
 										<td>
 											<input type="button" name="close" id="close" style="display: none;">
 											<label for="close"> 
-											<a href="cartDelete.do?ppk=${data.ppk}"><img src="img/close.png" alt="닫기버튼" style="width: 20px; height: 20px"></a>
+											<a href="/cartDelete?ppk=${data.ppk}"><img src="img/close.png" alt="닫기버튼" style="width: 20px; height: 20px"></a>
 											</label>
 										</td>
 									</tr>
@@ -103,8 +103,8 @@
 								<td></td>
 								<td>
 									<div class="checkout_btn_inner d-flex align-items-center">
-										<a class="gray_btn" href="productList.do">쇼핑하기</a> 
-										<a class="gray_btn ml-2" href="checkout.do">구매하기</a>
+										<a class="gray_btn" href="/productList">쇼핑하기</a> 
+										<a class="gray_btn ml-2" href="/checkout">구매하기</a>
 									</div>
 								</td>
 							</tr>

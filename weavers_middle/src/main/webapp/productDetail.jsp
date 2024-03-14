@@ -37,7 +37,7 @@
 						<p>${detail}</p>
 
 						<div class="product_count" style="width: 160px">
-							<label for="qty">수량:</label> <input type="text" name="qty"
+							<label for="qty">수량:</label> <input type="text" name="cartCnt"
 								id="sst" size="2" maxlength="12" value="1" title="Quantity:"
 								class="input-text qty" readonly>
 								
@@ -92,7 +92,7 @@
 					data-toggle="tab" href="#review" role="tab" aria-controls="review"
 					aria-selected="false">리뷰</a></li>
 			</ul>
-			
+
 			<div class="tab-content" id="myTabContent">
 				<!-- 상품 상세정보(설명) -->
 				<div class="tab-pane fade" id="home" role="tabpanel"
@@ -182,7 +182,7 @@
 										<c:if test="${data.gpk != 5}">
 										<span>${data.regdate}</span><br><br>
 											<h4>작성자 : ${data.nickname}</h4>	</c:if><br>	
-											<input class="starValue" type="hidden" name="scope" id="scope_${data.rpk}" value="${data.scope}"> <!-- 해당 회원이 작성한 리뷰 별점 	-->
+											<input class="starValue" type="hidden" name="reviewScope" id="scope_${data.rpk}" value="${data.scope}"> <!-- 해당 회원이 작성한 리뷰 별점 	-->
 											<star:star id="${data.rpk}" defaultRating="${data.scope}" />
 										</div>
 										<div class="d-flex">
@@ -197,7 +197,7 @@
 										</div>
 									</div><br>
 										<div>
-											<textarea class="col-lg-12" rows="3" name="message"
+											<textarea class="col-lg-12" rows="3" name="reviewContent"
 												placeholder="리뷰 내용" readonly style="resize:none; border:2px solid gray; border-radius:5px; line-height: 2; font-size:large;">${data.content}
 											</textarea>
 										</div>

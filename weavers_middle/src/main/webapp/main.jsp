@@ -39,7 +39,7 @@
 										<!-- 					<script>
   								  alert("data.ppk value: ${data.ppk}");
 									</script> -->
-										<a href="productDetail.do?ppk=${data.ppk}"><img
+										<a href="/productDetail?ppk=${data.ppk}"><img
 											class="card-img" src="${data.img}" alt=""></a>
 
 										<ul class="card-product__imgOverlay">
@@ -58,7 +58,7 @@
 									</div>
 									<div class="card-body">
 										<h4 class="card-product__title">
-											<a href="productDetail.do?ppk=${data.ppk}">${data.pname}</a>
+											<a href="/productDetail?ppk=${data.ppk}">${data.pname}</a>
 										</h4>
 										<p class="card-product__price"><fmt:formatNumber value="${data.price}" currencyCode="KRW" />원</p>
 									</div>
@@ -90,15 +90,10 @@
 					<c:if test="${fn:length(sdatas) > 0}">
 						<!-- <div class="row"> -->
 						<c:forEach var="data" items="${sdatas}">
-							<!-- <div class="row"></div> -->
-							<!-- <div class="card text-center card-product"	>  -->
-
-							<!-- <div class="col-md-6 col-lg-4 col-xl-3"> -->
-
 							<div class="card text-center card-product"
 								data-product-pk="${data.ppk}">
 								<div class="card-product__img">
-									<a href="productDetail.do?ppk=${data.ppk}"><img
+									<a href="/productDetail?ppk=${data.ppk}"><img
 										class="card-img" src="${data.img}" alt="${data.img}번 상품사진"></a>
 									<ul class="card-product__imgOverlay">
 										<li>
@@ -116,15 +111,12 @@
 								</div>
 								<div class="card-body">
 									<h4 class="card-product__title">
-										<a href="productDetail.do?ppk=${data.ppk}">${data.pname}</a>
+										<a href="/productDetail?ppk=${data.ppk}">${data.pname}</a>
 									</h4>
 									<p class="card-product__price"><fmt:formatNumber value="${data.price}" currencyCode="KRW" />원</p>
 								</div>
 							</div>
-							<!-- </div> -->
-							<!--  </div>  -->
 						</c:forEach>
-						<!-- </div> -->
 					</c:if>
 				</div>
 			</div>

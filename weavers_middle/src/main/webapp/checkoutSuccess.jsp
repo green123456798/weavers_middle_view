@@ -126,8 +126,8 @@
 					</table>
 				</div>
 				<div class="bottom-right box" style="display: flex; justify-content: flex-end; margin-top: 30px;">
-					<a href="checkoutList.do" class="button button-blog">구매내역</a>
-					<a href="main.do" class="button button-blog">메인으로</a>
+					<a href="/checkoutList" class="button button-blog">구매내역</a>
+					<a href="/main" class="button button-blog">메인으로</a>
 				</div>
 			</div>
 		</div>

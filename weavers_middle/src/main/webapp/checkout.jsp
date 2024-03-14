@@ -149,34 +149,34 @@
 		<div class="container">
 			<div class="billing_details">
 				<div class="row">
-					<form class="row contact_form" id="checkoutForm" onsubmit="return checkoutSubmit()" action="checkoutSuccess.do"
+					<form class="row contact_form" id="checkoutForm" onsubmit="return checkoutSubmit()" action="/checkoutSuccess"
 						method="post" style="margin: auto;">
 						<!-- 주문자 정보 -->
 						<div class="col-lg-7">
 							<h3>Billing Details</h3>
 							<div class="col-md-12 form-group p_star">
 								<input type="text" class="form-control checkoutInfo" id="checkoutName"
-									name="name" placeholder="이름" value="${name}" required readonly>
+									name="memberName" placeholder="이름" value="${name}" required readonly>
 							</div>
 
 							<div class="col-md-12 form-group p_star">
 								<input type="text" class="form-control checkoutInfo" id="checkoutPhone"
-									name="phone" placeholder="연락처" value="${phone}" required readonly>
+									name="memberPhone" placeholder="연락처" value="${phone}" required readonly>
 							</div>
 
 							<div class="col-md-12 form-group p_star">
 								<input type="text" class="form-control checkoutInfo" id="checkoutEmail"
-									name="email" placeholder="이메일" value="${email}" required readonly>
+									name="memberEmail" placeholder="이메일" value="${email}" required readonly>
 							</div>
 
 							<div class="col-md-12 form-group">
 								<div class="creat_account">
 								<c:if test="${marketing > 0}">
-									<input type="checkbox" id="f-option3" name="marketing" checked>
+									<input type="checkbox" id="f-option3" name="memberMarketing" checked>
 									<label for="f-option3">이메일로 영수증을 받으시려면 체크 해주세요</label>
 								</c:if>
 								<c:if test="${marketing == 0}">
-									<input type="checkbox" id="f-option3" name="marketing">
+									<input type="checkbox" id="f-option3" name="memberMarketing">
 									<label for="f-option3">이메일로 영수증을 받으시려면 체크 해주세요</label>
 								</c:if>
 								</div>
@@ -197,22 +197,22 @@
 							</div>
 							<div class="col-md-10 form-group">
 								<input type="text" class="form-control"
-									id="checkout_roadAddress" name="checkout_roadAddress"
+									id="checkout_roadAddress" name="addressZonecode"
 									placeholder="도로명주소" 
 									style="display: inline-block; background-color: #fff" readonly>
 							</div>
 							<div class="col-md-10 form-group">
 								<input type="text" class="form-control"
-									id="checkout_jibunAddress" name="checkout_jibunAddress"
+									id="checkout_jibunAddress" name="addressJibun"
 									placeholder="지번주소" 
 									style="display: inline-block; background-color: #fff" readonly>
 							</div>
 							<div class="col-md-10 form-group">
 								<input type="text" class="form-control" id="checkout_detail"
-									name="checkout_detail" placeholder="상세주소" style="display: inline-block; background-color: #fff" readonly>
+									name="addressDetail" placeholder="상세주소" style="display: inline-block; background-color: #fff" readonly>
 							</div>
-							<input type="hidden" class="form-control" id="apk" name="apk">
-							<input type="hidden" class="form-control" id="aname" name="aname">
+							<input type="hidden" class="form-control" id="apk" name="addressPK">
+							<input type="hidden" class="form-control" id="aname" name="addressName">
 							<!-- /주소 검색 -->
 						</div>
 						<!-- /주문자 정보 -->

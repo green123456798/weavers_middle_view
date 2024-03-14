@@ -22,7 +22,7 @@
 						<div class="hover">
 							<h4>WeaveGlow - Register</h4>
 							<p>위브글로우 회원이 되어 다양한 혜택을 누려보세요.</p>
-							<a class="button button-account" href="register.do">회원가입</a>
+							<a class="button button-account" href="/register">회원가입</a>
 						</div>
 					</div>
 				</div>
@@ -30,14 +30,14 @@
 					<div class="login_form_inner">
 						<h3>Log In</h3>
 						<form name=loginForm; class="row login_form"
-							action="memberSelectOne.do" id="contactForm" method="POST">
+							action="/memberSelectOne" id="contactForm" method="POST">
 							<div class="col-md-12 form-group">
-								<input type="text" class="form-control" id="mid" name="mid"
+								<input type="text" class="form-control" id="mid" name="memberID"
 									placeholder="아이디 입력" onfocus="this.placeholder = ''"
 									onblur="this.placeholder = '아이디 입력'" required>
 							</div>
 							<div class="col-md-12 form-group">
-								<input type="password" class="form-control" id="mpw" name="mpw"
+								<input type="password" class="form-control" id="mpw" name="memberPassword"
 									placeholder="비밀번호 입력" onfocus="this.placeholder = ''"
 									onblur="this.placeholder = '비밀번호 입력'" required>
 							</div>
