@@ -1,3 +1,28 @@
+/*document.addEventListener('DOMContentLoaded', function() {
+  const carousel = document.querySelector('.carousel');
+  const container = carousel.querySelector('.carousel-container');
+  const items = container.querySelectorAll('.carousel-item');
+  const prevBtn = carousel.querySelector('.carousel-control.prev');
+  const nextBtn = carousel.querySelector('.carousel-control.next');
+  
+  let currentIndex = 0;
+  
+  function goToSlide(index) {
+    container.style.transform = `translateX(-${index * 100}%)`;
+    currentIndex = index;
+  }
+  
+  prevBtn.addEventListener('click', function() {
+    currentIndex = (currentIndex - 1 + items.length) % items.length;
+    goToSlide(currentIndex);
+  });
+  
+  nextBtn.addEventListener('click', function() {
+    currentIndex = (currentIndex + 1) % items.length;
+    goToSlide(currentIndex);
+  });
+});
+*/
 //---------- 찜 기능 ----------
 function wishClick(ppk, mid) {
 	if(mid == null || mid == '' || mid == 'undefined'){			// 로그아웃 상태
