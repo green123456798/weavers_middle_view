@@ -8,6 +8,7 @@ import controller.action.CartDeleteAction;
 import controller.action.CheckoutAction;
 import controller.action.CheckoutListAction;
 import controller.action.CheckoutSuccessAction;
+import controller.action.CleangingProductListAction;
 import controller.action.ContactAction;
 import controller.action.ErrorAction;
 import controller.action.LoginAction;
@@ -50,6 +51,7 @@ public class HandlerMapper {
 		mappings.put("/checkout.do", new CheckoutAction());
 		mappings.put("/checkoutList.do", new CheckoutListAction());
 		mappings.put("/checkoutSuccess.do", new CheckoutSuccessAction());
+		mappings.put("/cleangingProductList.do", new CleangingProductListAction());
 		mappings.put("/contact.do", new ContactAction());
 		mappings.put("/login.do", new LoginAction());
 		mappings.put("/logout.do", new LogoutAction());

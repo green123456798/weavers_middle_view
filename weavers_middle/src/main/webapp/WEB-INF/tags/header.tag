@@ -84,8 +84,10 @@
 								href="productList.do" onmouseover="showDropdownMenu()">상품목록</a>
 								<div class="dropdown-menu popover" id="productDropdownMenu"
 									onmouseleave="hideDropdownMenu()">
+									<a href="productList.do" class="dropdown-item">전체</a>
+									<div class="dropdown-divider"></div> <!-- 선 추가 -->
 									<a href="productList.do" class="dropdown-item">스킨케어</a> <a
-										href="productList.do" class="dropdown-item">클렌징</a> <a
+										href=cleangingProductList.do class="dropdown-item">클렌징</a> <a
 										href="productList.do" class="dropdown-item">마스크 팩</a>
 								</div></li>
 							<li class="nav-item"><a class="nav-link" href="contact.do">회사정보</a></li>
