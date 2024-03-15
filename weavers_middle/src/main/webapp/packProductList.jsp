@@ -8,7 +8,7 @@
 <!DOCTYPE html>
 <html lang="ko">
 <head>
-<title>WeaveGlow - cleangingProductList</title>
+<title>WeaveGlow - packProductList</title>
 <common:head />
 <style type="text/css">
 
@@ -58,7 +58,7 @@
 </head>
 <body>
 	<common:header />
-	<common:banner bannerText='클렌징' />
+	<common:banner bannerText='마스크/팩' />
 
 	<!-- ================ 내용 ================= -->
 	<br>
@@ -68,13 +68,13 @@
                                 <ul>
                                     <li><a href="/ctgr/subcategory_product_list.do?i_sCategorycd1=L01&amp;i_sCategorynm1=기초&amp;i_sCategorycd2=L01M02&amp;i_sCategorynm2=클렌징" id="" class="ctgr_box active" style="border-right: 1px solid rgba(0, 0, 0, 0.1)">전체</a></li>
                                        <!-- 선택된 카테고리의 경우 class 에 active 추가 -->
-                                        <li><a id="L01M02S1" href="/ctgr/subcategory_product_list.do?i_sCategorycd1=L01&amp;i_sCategorynm1=기초&amp;i_sCategorycd2=L01M02&amp;i_sCategorynm2=클렌징&amp;i_sCategorycd3=L01M02S1&amp;i_sCategorynm3=클렌징폼" class="ctgr_box " style="border-right: 1px solid rgba(0, 0, 0, 0.1)">클렌징폼</a></li>
+                                        <li><a id="L01M02S1" href="/ctgr/subcategory_product_list.do?i_sCategorycd1=L01&amp;i_sCategorynm1=기초&amp;i_sCategorycd2=L01M02&amp;i_sCategorynm2=클렌징&amp;i_sCategorycd3=L01M02S1&amp;i_sCategorynm3=마사지/워시오프 팩" class="ctgr_box " style="border-right: 1px solid rgba(0, 0, 0, 0.1)">마사지/워시오프 팩</a></li>
                                        <!-- 선택된 카테고리의 경우 class 에 active 추가 -->
-                                        <li><a id="L01M02S2" href="/ctgr/subcategory_product_list.do?i_sCategorycd1=L01&amp;i_sCategorynm1=기초&amp;i_sCategorycd2=L01M02&amp;i_sCategorynm2=클렌징&amp;i_sCategorycd3=L01M02S2&amp;i_sCategorynm3=클렌징크림/로션/워터" class="ctgr_box " style="border-right: 1px solid rgba(0, 0, 0, 0.1)">클렌징크림/로션/워터</a></li>
+                                        <li><a id="L01M02S2" href="/ctgr/subcategory_product_list.do?i_sCategorycd1=L01&amp;i_sCategorynm1=기초&amp;i_sCategorycd2=L01M02&amp;i_sCategorynm2=클렌징&amp;i_sCategorycd3=L01M02S2&amp;i_sCategorynm3=필링/스크럽" class="ctgr_box " style="border-right: 1px solid rgba(0, 0, 0, 0.1)">필링/스크럽</a></li>
                                       <!-- 선택된 카테고리의 경우 class 에 active 추가 -->
-                                        <li><a id="L01M02S3" href="/ctgr/subcategory_product_list.do?i_sCategorycd1=L01&amp;i_sCategorynm1=기초&amp;i_sCategorycd2=L01M02&amp;i_sCategorynm2=클렌징&amp;i_sCategorycd3=L01M02S3&amp;i_sCategorynm3=클렌징젤/오일/티슈" class="ctgr_box " style="border-right: 1px solid rgba(0, 0, 0, 0.1)">클렌징젤/오일/티슈</a></li>
+                                        <li><a id="L01M02S3" href="/ctgr/subcategory_product_list.do?i_sCategorycd1=L01&amp;i_sCategorynm1=기초&amp;i_sCategorycd2=L01M02&amp;i_sCategorynm2=클렌징&amp;i_sCategorycd3=L01M02S3&amp;i_sCategorynm3=시트마스크" class="ctgr_box " style="border-right: 1px solid rgba(0, 0, 0, 0.1)">시트마스크</a></li>
                                      <!-- 선택된 카테고리의 경우 class 에 active 추가 -->
-                                        <li><a id="L01M02S4" href="/ctgr/subcategory_product_list.do?i_sCategorycd1=L01&amp;i_sCategorynm1=기초&amp;i_sCategorycd2=L01M02&amp;i_sCategorynm2=클렌징&amp;i_sCategorycd3=L01M02S4&amp;i_sCategorynm3=립&amp;아이 리무버" class="ctgr_box " >립&amp;아이 리무버</a></li>
+                                        <li><a id="L01M02S4" href="/ctgr/subcategory_product_list.do?i_sCategorycd1=L01&amp;i_sCategorynm1=기초&amp;i_sCategorycd2=L01M02&amp;i_sCategorynm2=클렌징&amp;i_sCategorycd3=L01M02S4&amp;i_sCategorynm3=코팩" class="ctgr_box " >코팩</a></li>
                                 </ul>
                             </div>
                         </div>
