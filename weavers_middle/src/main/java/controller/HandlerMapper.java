@@ -29,6 +29,7 @@ import controller.action.ReviewInsertAction;
 import controller.action.ReviewListAction;
 import controller.action.ReviewUpdateAction;
 import controller.action.SearchProductNameAction;
+import controller.action.SkincareProductListAction;
 import controller.action.UnregisterAction;
 import controller.action.UnregisterSuccessAction;
 import controller.action.WishListAction;
@@ -64,6 +65,7 @@ public class HandlerMapper {
 		mappings.put("/review.do", new ReviewAction());
 		mappings.put("/reviewList.do", new ReviewListAction());
 		mappings.put("/searchProductName.do", new SearchProductNameAction());
+		mappings.put("/skincareProductList.do", new SkincareProductListAction());
 		mappings.put("/registerSuccess.do", new RegisterSuccessAction());
 		mappings.put("/unregister.do", new UnregisterAction());
 		mappings.put("/unregisterSuccess.do", new UnregisterSuccessAction());
