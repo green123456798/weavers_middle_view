@@ -42,7 +42,7 @@ h6 {
 h1,
 .h1 {
     font-size: 50px;
-    font-weight: 700
+    font-weight: 900
 }
 
 h2,
@@ -1362,6 +1362,7 @@ a {
 }
 
 .blog-banner h4 {
+	font-weight: 800;
     font-size: 18px;
     margin-bottom: 15px
 }

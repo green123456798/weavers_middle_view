@@ -50,7 +50,7 @@ function productListForm(data) {
 	var formattedPrice = data.price.toLocaleString();
 	var product = `
 	<div class="col-md-6 col-lg-4 col-xl-3">
-		<div class="card text-center card-product" data-product-pk="${data.ppk}">
+		<div  class="card text-center card-product" data-product-pk="${data.ppk}">
 			<div class="card-product__img">
 				<a href="productDetail.do?ppk=${data.ppk}">
 					<img class="card-img" src="${data.img}" alt="${data.ppk}번 상품사진">

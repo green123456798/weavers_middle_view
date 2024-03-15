@@ -55,34 +55,6 @@
 
 </style>
 
-<style>
-        /* 작은 화면에 대한 스타일 */
-        @media screen and (max-width: 768px) {
-            .grid-container {
-                height: auto; /* 기존 높이 제거 */
-                flex-direction: column; /* 요소들을 수직으로 나열 */
-                align-items: center; /* 요소들을 가운데 정렬 */
-            }
-
-            .ctgr_box {
-                width: 100%; /* 너비를 100%로 설정하여 꽉 차게 배치 */
-            }
-        }
-
-        /* 큰 화면에 대한 스타일 */
-        @media screen and (min-width: 769px) {
-            .grid-container {
-                height: 80px; /* 다시 기존 높이로 설정 */
-                flex-direction: row; /* 요소들을 수평으로 나열 */
-                justify-content: center; /* 요소들을 가운데 정렬 */
-            }
-
-            .ctgr_box {
-                width: 275px; /* 기존 너비로 설정 */
-            }
-        }
-    </style>
-
 </head>
 <body>
 	<common:header />
