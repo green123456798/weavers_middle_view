@@ -5,7 +5,7 @@
 	<div class="container h-100">
 		<div class="blog-banner">
 			<div class="text-center">
-				<h1 style="color:black;">${bannerText}</h1>
+				<h1 style="color:black; font-weight: bold;">${bannerText}</h1>
 				<nav aria-label="breadcrumb" class="banner-breadcrumb">
 					<ol class="breadcrumb">
 						<li class="breadcrumb-item"><a href="#">WeaveGlow</a></li>
