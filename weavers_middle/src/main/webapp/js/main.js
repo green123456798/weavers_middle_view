@@ -1,28 +1,33 @@
-/*document.addEventListener('DOMContentLoaded', function() {
-  const carousel = document.querySelector('.carousel');
-  const container = carousel.querySelector('.carousel-container');
-  const items = container.querySelectorAll('.carousel-item');
-  const prevBtn = carousel.querySelector('.carousel-control.prev');
-  const nextBtn = carousel.querySelector('.carousel-control.next');
+//---------- 캐러셸 기능 ----------
+ let slideIndex = 0;
+  const slides = document.querySelectorAll('.carousel img');
   
-  let currentIndex = 0;
-  
-  function goToSlide(index) {
-    container.style.transform = `translateX(-${index * 100}%)`;
-    currentIndex = index;
+  function showSlide(index) {
+    slides.forEach((slide) => {
+      slide.style.display = 'none';
+    });
+    slides[index].style.display = 'block';
   }
-  
-  prevBtn.addEventListener('click', function() {
-    currentIndex = (currentIndex - 1 + items.length) % items.length;
-    goToSlide(currentIndex);
-  });
-  
-  nextBtn.addEventListener('click', function() {
-    currentIndex = (currentIndex + 1) % items.length;
-    goToSlide(currentIndex);
-  });
-});
-*/
+
+  function nextSlide() {
+    slideIndex++;
+    if (slideIndex >= slides.length) {
+      slideIndex = 0;
+    }
+    showSlide(slideIndex);
+  }
+
+  function prevSlide() {
+    slideIndex--;
+    if (slideIndex < 0) {
+      slideIndex = slides.length - 1;
+    }
+    showSlide(slideIndex);
+  }
+
+  // 자동으로 슬라이드 전환 (3초마다)
+  setInterval(nextSlide, 3000);
+
 //---------- 찜 기능 ----------
 function wishClick(ppk, mid) {
 	if(mid == null || mid == '' || mid == 'undefined'){			// 로그아웃 상태
