@@ -81,9 +81,9 @@
 									<a href="productList.do" class="dropdown-item">전체</a>
 									<div class="dropdown-divider"></div>
 									<!-- 선 추가 -->
-									<a href="skincareProductList.do" class="dropdown-item">스킨케어</a> <a
-										href="cleangingProductList.do" class="dropdown-item">클렌징</a> <a
-										href="packProductList.jsp" class="dropdown-item">마스크 팩</a>
+									<a href="skincareProductList.do" class="dropdown-item">스킨케어</a>
+									<a href="cleangingProductList.do" class="dropdown-item">클렌징</a>
+									<a href="packProductList.jsp" class="dropdown-item">마스크 팩</a>
 								</div></li>
 							<li class="nav-item"><a class="nav-link" href="contact.do">회사정보</a></li>
 						</ul>
@@ -99,8 +99,15 @@
 									</form>
 								</div>
 							</li>
-							<li class="nav-item"><a href="cart.do"><i
-									class="ti-shopping-cart"></i></a></li>
+							<c:if test="${not empty sessionMid && admin} ">
+								<!-- 관리자이며 로그인이 되어 있는 경우 -->
+								<li class="nav-item"><a href="/adminDashboard"><i
+										class="ti-user"></i></a></li>
+							</c:if>
+							<c:if test="${empty sessionMid || not empty sessionMid}">
+								<li class="nav-item"><a href="cart.do"><i
+										class="ti-shopping-cart"></i></a></li>
+							</c:if>
 							<c:if test="${not empty sessionMid}">
 								<li class="nav-item"><a class="button button-header"
 									href="logout.do" id="logout">로그아웃</a></li>
