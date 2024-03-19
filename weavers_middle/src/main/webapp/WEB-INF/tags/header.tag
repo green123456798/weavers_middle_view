@@ -99,7 +99,7 @@
 									</form>
 								</div>
 							</li>
-							<c:if test="${not empty sessionMid && admin} ">
+							<c:if test="${not empty sessionMid && admin==2} ">
 								<!-- 관리자이며 로그인이 되어 있는 경우 -->
 								<li class="nav-item"><a href="/adminDashboard"><i
 										class="ti-user"></i></a></li>
